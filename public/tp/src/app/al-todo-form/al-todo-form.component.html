@@ -1,0 +1,10 @@
+<form #todoForm = "ngForm" (submit)="doSubmit(todo)">
+    <div class="form-group">
+      <input type="text" placeholder="Action" class="form-control" name="action" [(ngModel)]='todo.action'>
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Place" class="form-control" name="place" [(ngModel)]='todo.place'>
+      </div>
+  
+    <button type="submit" class="btn btn-primary btn-block" id="bt_add">Ajouter</button>
+</form>

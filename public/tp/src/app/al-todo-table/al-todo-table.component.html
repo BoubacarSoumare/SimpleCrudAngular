@@ -1,0 +1,17 @@
+<table class="table">
+  <tr>
+      <th>id</th>
+      <th>action</th>
+      <th>place</th>
+      <th>actions</th>
+  </tr>
+  <tr *ngFor = "let todo of todos">
+    <td>{{todo.id}}</td>
+    <td>{{todo.action}}</td>
+    <td>{{todo.place}}</td>
+    <td>
+      <button class="btn btn-danger" (click)="doDelete(todo)" style="margin-right: 5px;">delete</button>
+      <button class="btn btn-success" (click)="doUpdate(todo)">update</button>
+    </td>
+  </tr>
+</table>
